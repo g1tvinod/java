@@ -10,11 +10,15 @@ public class Overloading {
   //[1,2,3,4,5,6,7,8,9,10], 5
   public static int sum(int [] arr, int n) {
     int sum = 0;
-    for(int i = 0; i < arr.length() || i < n ; i++){
+    for(int i = 0; i < arr.length() && i < n ; i++){
       sum = sum + a[i];
     }
     return sum;
   }
+  
+  public static int sum(int a, int b, int c) {
+		return a + b + c;
+	}
 
   public static void main(String[] args) {
     int [] arr1 = {1,2};
@@ -29,5 +33,6 @@ public class Overloading {
     int [] arr4 = {8,9};
     System.out.println(sum(arr4));
     
+    System.out.println(sum(1,2,3));
   }
 }
