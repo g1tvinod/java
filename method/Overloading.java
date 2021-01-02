@@ -17,8 +17,8 @@ public class Overloading {
   }
   
   public static int sum(int a, int b, int c) {
-		return a + b + c;
-	}
+    return a + b + c;
+  }
 
   public static void main(String[] args) {
     int [] arr1 = {1,2};
